@@ -1,0 +1,104 @@
+{
+  "_comentario": "Copia este archivo a business_rules.json y ajústalo a tu cuenta de GoContact. Las cabeceras de 'columnas' deben coincidir con las del CSV del Report Designer (usa la herramienta columnas_informe para verlas).",
+
+  "columnas": {
+    "contact_id": "Contact ID",
+    "unique_id": "identificador unico [field10]",
+    "owner": "Campaign Name",
+    "owner_cola": "Queue Name",
+    "owner_id": "Owner ID",
+    "campana_dato": "Campaña",
+    "database": "Database ID",
+    "database_nombre": "Database Name",
+    "id_formulario": "id formulario [field3]",
+    "proveedor": "proveedor [field9]",
+    "producto": "Producto [field12]",
+    "bd_original": "BD original [field27]",
+    "medio": "Medio",
+    "servicio": "servicio",
+    "outcome": "Contact Outcome name",
+    "outcome_llamada": "Call Outcome name",
+    "lead_status": "Lead Status",
+    "total_calls": "Total Calls",
+    "venta_vd": "Venta VD",
+    "load_date": "Load Date",
+    "fecha_alta": "DB Created Date",
+
+    "call_uuid": "UUID de llamada",
+    "call_uuid_script": "UUID",
+    "agente": "Agent User Name",
+    "fecha_llamada": "Call start",
+    "talk_time": "Talk Time",
+
+    "grupo": "Grupo",
+    "final": "Final",
+    "gestion": "Gestión realizada",
+    "prod_1": "Producto vendido 1",
+    "aseg_1": "Asegurados 1",
+    "prima_1": "Prima 1",
+    "efecto_1": "Fecha efecto 1",
+    "recorte_1": "Recorte 1",
+    "prod_2": "Producto vendido 2",
+    "aseg_2": "Asegurados 2",
+    "prima_2": "Prima 2",
+    "efecto_2": "Fecha efecto 2",
+    "recorte_2": "Recorte 2",
+    "prod_3": "Producto vendido 3",
+    "aseg_3": "Asegurados 3",
+    "prima_3": "Prima 3",
+    "efecto_3": "Fecha efecto 3",
+    "recorte_3": "Recorte 3",
+    "origen_saliente": "Origen (llamada saliente)",
+    "origen_entrante": "Origen (llamada entrante)",
+    "nif_gestor": "NIF Gestor"
+  },
+
+  "campos_fecha": ["efecto_1", "efecto_2", "efecto_3"],
+
+  "venta_campos": [
+    "contact_id", "call_uuid", "agente", "id_formulario", "proveedor",
+    "grupo", "final", "gestion",
+    "prod_1", "aseg_1", "prima_1", "efecto_1", "recorte_1",
+    "prod_2", "aseg_2", "prima_2", "efecto_2", "recorte_2",
+    "prod_3", "aseg_3", "prima_3", "efecto_3", "recorte_3",
+    "origen_saliente", "origen_entrante", "nif_gestor"
+  ],
+
+  "venta": {
+    "grupo": ["Venta"],
+    "productos": ["Salud", "Dental", "Hogar", "Vida", "Auto", "Decesos", "Accidentes", "Mascotas"],
+    "gestiones": [
+      "Contrato grabado telefónicamente",
+      "Contratación por tablet",
+      "Contratación online"
+    ],
+    "outcomes_venta": ["Venta", "Venta Cerrada"]
+  },
+
+  "bases_leads": [1001, 1002, 1003],
+
+  "outcomes_no_contestada": [
+    "No Contactado", "No Contesta", "No Answer", "Busy", "Auto Wrap Up",
+    "Auto Voice Logout", "Blacklisted", "Voicemail", "Drop", "Cancel",
+    "Queue Abandon", "Incomplete Logging", "Out of Schedule", "No Agents Available"
+  ],
+
+  "servicio": {
+    "empieza_por": ["Servicio | ", "Atención al cliente | ", "Recibos_"],
+    "exacto": ["Llamadas entrantes", "Callbacks", "Cola de pruebas"]
+  },
+
+  "origenes_no_validos": ["perdida-cambia-origen"],
+
+  "proveedores": [
+    ["afiliadoa", "Afiliado A"],
+    ["afiliado a", "Afiliado A"],
+    ["comparadorb", "Comparador B"],
+    ["adwords", "Google Ads"],
+    ["meta", "Meta Ads"]
+  ],
+
+  "proveedor_alias": {
+    "google": "Google Ads"
+  }
+}
